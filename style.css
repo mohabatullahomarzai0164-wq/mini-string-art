@@ -22,3 +22,13 @@ canvas{
     border-radius:10px;
     border:2px solid #444;
 }
+
+/* Input FIX */
+input{
+    padding:10px;
+    font-size:16px;
+    background:white;
+    border-radius:5px;
+    border:none;
+    cursor:pointer;
+}

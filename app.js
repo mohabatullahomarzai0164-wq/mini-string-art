@@ -33,7 +33,27 @@ for(let i = 0; i < nailCount; i++){
 // ----------------------
 // Upload Image
 // ----------------------
+imageUpload.addEventListener("change", function(event){
 
+    const file = event.target.files[0];
+    if(!file) return;
+
+    const reader = new FileReader();
+
+    reader.onload = function(e){
+
+        const img = new Image();
+
+        img.onload = function(){
+            uploadedImage = img;
+            drawScene();
+        };
+
+        img.src = e.target.result;
+    };
+
+    reader.readAsDataURL(file);
+});
 
 // ----------------------
 // MAIN DRAW FUNCTION
