@@ -1,0 +1,24 @@
+body{
+    margin:0;
+    padding:0;
+    background:#111;
+    color:white;
+    font-family:Arial;
+}
+
+/* FIXED container */
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:20px;
+    min-height:100vh;
+}
+
+/* Canvas style */
+canvas{
+    background:white;
+    border-radius:10px;
+    border:2px solid #444;
+}
